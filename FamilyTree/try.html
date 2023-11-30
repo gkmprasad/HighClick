@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .family-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .generation {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px; /* Increase vertical spacing between generations */
+    }
+
+    .family-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .person {
+      margin: 10px;
+    }
+
+    img {
+      max-width: 100px; /* Adjust the max width for portrait photos */
+      max-height: 150px; /* Adjust the max height for vertical elongation */
+      border-radius: 10px; /* Adjust the border-radius for curved edges */
+    }
+  </style>
+  <title>Family Tree</title>
+</head>
+<body>
+
+<div class="family-tree">
+  <div class="generation">
+    <div class="family-box">
+      <div class="person">
+        <img src="Wallpaper.JPG" alt="Husband Photo">
+        <p>John Doe (b. 1970)</p>
+      </div>
+    </div>
+    <div class="family-box">
+      <div class="person">
+        <img src="Wedding.jpg" alt="Wife Photo">
+        <p>Jane Doe (b. 1972)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="generation">
+    <div class="family-box">
+      <div class="person">
+        <img src="child1_portrait.jpg" alt="Child 1 Photo">
+        <p>Tom (b. 1995)</p>
+      </div>
+    </div>
+
+    <div class="family-box">
+      <div class="person">
+        <img src="child2_portrait.jpg" alt="Child 2 Photo">
+        <p>Ann (b. 1998)</p>
+      </div>
+    </div>
+
+    <div class="family-box">
+      <div class="person">
+        <img src="child3_portrait.jpg" alt="Child 3 Photo">
+        <p>Bob (b. 2001)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

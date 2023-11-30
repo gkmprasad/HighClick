@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Add Ant Design CSS (you can replace this link with the actual Ant Design CSS link) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.9/antd.min.css">
+
+        <title>High-Click</title>
+
+        <style>
+                /* 1. Heading for shop */
+                .sticky-heading {
+                        background-color: #07f62f;
+                        /* Background color for the heading */
+                        padding: 10px;
+                        /* Add padding for better visibility */
+                        position: sticky;
+                        top: 0;
+                        /* Stick to the top of the viewport */
+                        z-index: 100;
+                        /* Ensure the heading stays on top of other elements */
+                }
+
+                /* 1. Heading h1 centre alignment*/
+                h1 {
+                        text-align: center;
+                }
+
+                /* 2. Marquee offer settig */
+                .offer-container {
+                        background-color: #FFA500;
+                        /* Set the background color */
+                        font-size: 18px;
+                }
+
+                /* 3. Navigation bar setting */
+
+                /* Navigation bar to straight line */
+                ul {
+
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                }
+
+                /* Navigation bar on right side */
+                li a {
+                        float: right;
+                        display: block;
+                        padding: 8px;
+                        background-color: #747474;
+                        color: #07f62f;
+                }
+
+                /* 3. Navigation bar setting */
+
+                /* Style for dropdown container */
+                .dropdown {
+                        position: relative;
+                        display: inline-block;
+                        margin-right: 10px;
+                }
+
+                /* Style for the button */
+                .dropdown button {
+                        padding: 10px 30px;
+                        background-color: #747474;
+                        color: #07f62f;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 14px;
+                }
+
+                /* Style for the dropdown menu */
+                .dropdown .menu {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+                        border-radius: 10px;
+                        padding: 2px 0;
+                        z-index: 1;
+                }
+
+                /* Style for the menu items */
+                .dropdown .menu a {
+                        display: block;
+                        padding: 8px 30px;
+                        color: #333;
+                        text-decoration: none;
+
+                }
+
+                /* Show the menu on hover */
+                .dropdown:hover .menu {
+                        display: block;
+                }
+
+                .dropdown .menu a:hover {
+                        background-color: #07f62f;
+                        box-shadow: 0 2px 30px #f9f9f9(245, 243, 243, 0.15);
+                        border-radius: 10px;
+                        /* Change background color on hover */
+                }
+
+                /* 4. Gap between two objects */
+                .space-wrap {
+                        margin-bottom: 20px;
+                        /* Adjust the value to control the gap */
+                }
+
+                /* 5. Wallpaper setting */
+                img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                }
+        /* Style for submenus */
+        ul ul {
+            display: none;
+            position: absolute;
+            background-color: #333; /* Submenu background color */
+            border-radius: 0 0 5px 5px;
+            padding: 0;
+        }
+
+        ul li:hover > ul {
+            display: block;
+        }
+
+        ul ul li {
+            float: none; /* Make submenu items stack vertically */
+            position: relative;
+            padding: 10px;
+        }
+
+        ul ul ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+
+        /* Style for horizontal sublists */
+        ul ul li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        ul ul ul {
+            top: 100%;
+            left: 0;
+        }
+        
+        </style>
+</head>
+
+<body>
+        <!-- 1. Heading for Shop -->
+        <div class="sticky-heading">
+                <h1>High Click Studio's Welcomes you</h1>
+        </div>
+        <!-- 2. Marquee offer -->
+        <div class="offer-container">
+                <marquee behavior="alternate">15% offer for first booking</marquee>
+        </div>
+        <!-- 3. Navigation bar -->
+        <div>
+                <ul>
+                        <li><a href="http://127.0.0.1:5500/High%20Click/About-Us.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://127.0.0.1:5500/High%20Click/Portrait-gallery.html">Gallery</a>
+                        <!-- Submenu for Gallery -->
+                        <ul>
+                                <li><a href="http://127.0.0.1:5500/High%20Click/Portrait-gallery.html">Portrait</a></li>
+                                <li><a href="http://127.0.0.1:5500/High%20Click/Video-gallery.html">Video</a></li>
+                                <!-- Add more submenu items as needed -->
+                        </ul></li>
+                        <li><a href="#home">Home</a></li>
+                </ul>
+        </div>
+        <!-- 4. Buttons -->
+        <div class="space-wrap">
+                <div class="dropdown">
+                        <button>Event</button>
+                        <div class="menu">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">Wedding</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">Reception</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.luohanacademy.com">Betrothal</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">Ear
+                                        piercing</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">Baby
+                                        showering</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.luohanacademy.com">Puberty</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                        <button>Type</button>
+                        <div class="menu">
+                                <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.antgroup.com">Portrait</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">Pre
+                                        Wedding</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">Post
+                                        Wedding</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.luohanacademy.com">Modelling</a>
+                                <a target="_blank" rel="noopener noreferrer"
+                                        href="https://www.luohanacademy.com">Baby</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                        <button>Book Us </button>
+                </div>
+                <div>
+                        <!-- 4. Space Warp - Gap between objects -->
+                        <div class="space-wrap">
+                                <!-- Gap given here -->
+                        </div>
+
+                        <!-- 5. Adding wallpaper -->
+                        <img src="Wallpaper.JPG" alt="Wallpaper" width="1920" height="1300">
+                        <!-- 4. Space Warp - Gap between objects -->
+                        <div class="space-wrap">
+                                <!-- Gap given here -->
+                        </div>
+                </div>
+                <p>
+                        <!-- 6. About Studio - Content -->
+                <h3>Welcome to High-Click Studio's - Where Moments Come to Life!</h3>
+"Hello and welcome to our photo studio! We're delighted you stopped by. Take a stroll through our galleries to see the
+stories we've captured. Whether you're looking for a photo session or just curious, we're here for you. Let's make
+memories worth remembering!"
+                </p>
+        </div>
+</body>
+
+</html>

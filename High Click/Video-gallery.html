@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Strip Video Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #61dafb;
+            padding: 20px;
+        }
+
+        .filmstrip-container {
+            overflow: hidden;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .filmstrip {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .filmstrip video {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .filmstrip video:hover {
+            transform: scale(1.1);
+            border-color: #61dafb;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Film Strip Video Gallery</h1>
+
+    <div class="filmstrip-container">
+        <div class="filmstrip">
+            <!-- Add your video sources with appropriate file paths or URLs -->
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Add more videos as needed -->
+        </div>
+    </div>
+
+</body>
+
+</html>
