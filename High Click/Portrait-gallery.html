@@ -41,11 +41,47 @@
             transform: scale(2.2);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
+
+        /* 2. Navigation bar setting */
+
+        /* Navigation bar to straight line */
+        ul {
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Navigation bar on right side */
+        li a {
+            float: right;
+            display: block;
+            padding: 8px;
+            background-color: #747474;
+            color: #07f62f;
+        }
+
+        /* 2. Navigation bar setting */
+
+        /* Style for dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
-
+    <div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/High%20Click/About-Us.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/High%20Click/Contact.html">Contact</a></li>
+            <li><a href="http://127.0.0.1:5500/High%20Click/Portrait-gallery.html">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5500/High%20Click/Home.html#about">Home</a></li>
+        </ul>
+    </div>
     <h1>Zooming Portrait Gallery</h1>
 
     <div class="gallery">
