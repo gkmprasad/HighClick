@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film Strip Video Gallery</title>
+    <title>Video Gallery</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,6 +30,7 @@
 
         .filmstrip {
             display: flex;
+            justify-content: space-between; /* Updated style for even spacing */
             gap: 30px;
             padding: 20px;
             transition: transform 0.5s ease-in-out;
@@ -53,31 +54,48 @@
 </head>
 
 <body>
-    <div>
-        <ul>
-            <li><a href="http://127.0.0.1:5500/High%20Click/About-Us.html">About</a></li>
-            <li><a href="http://127.0.0.1:5500/High%20Click/Contact.html">Contact</a></li>
-            <li><a href="http://127.0.0.1:5500/High%20Click/Gallery.html">Gallery</a></li>
-            <li><a href="http://127.0.0.1:5500/High%20Click/Home.html#about">Home</a></li>
-        </ul>
-    </div>
-    <h1>Film Strip Video Gallery</h1>
+
+    <h1>Video Gallery</h1>
+    <hr>
+    <h1>Video Gallery</h1>
 
     <div class="filmstrip-container">
         <div class="filmstrip">
             <!-- Add your video sources with appropriate file paths or URLs -->
             <video controls>
-                <source src="video1.mp4" type="video/mp4">
+                <source src="Video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <video controls>
-                <source src="video2.mp4" type="video/mp4">
+                <source src="Video2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <video controls>
-                <source src="video3.mp4" type="video/mp4">
+                <source src="Video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Add more videos as needed -->
+        </div>
+    </div>
+    <hr>
+    <h1>Video Gallery</h1>
+    <div class="filmstrip-container">
+        <div class="filmstrip">
+            <!-- Add your video sources with appropriate file paths or URLs -->
+            <video controls>
+                <source src="Video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video controls>
+                <source src="Video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video controls>
+                <source src="Video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <!-- Add more videos as needed -->

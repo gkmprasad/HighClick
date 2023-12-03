@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .half {
+            flex: 1;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #left-half {
+            background-color: #f2f2f2;
+        }
+
+        #right-half {
+            background-color: #e6e6e6;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* 2. Navigation bar setting */
+
+        /* Navigation bar to straight line */
+        ul {
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Navigation bar on right side */
+        li a {
+            float: right;
+            display: block;
+            padding: 8px;
+            background-color: #747474;
+            color: #07f62f;
+        }
+
+        /* 2. Navigation bar setting */
+
+        /* Style for dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 2. Navigation bar -->
+    <div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/High%20Click/About-Us.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/High%20Click/Contact.html">Contact</a></li>
+            <li><a href="http://127.0.0.1:5500/High%20Click/Gallery.html">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5500/High%20Click/Home.html#about">Home</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="left-half" class="half">
+            <h2>Portraits</h2>
+            <hr>
+            <img src="portrait1.jpg" alt="Portraits Image">
+            <hr>
+            <a href="http://127.0.0.1:5500/High%20Click/Portrait-gallery.html" target="_blank">
+                <button type="button">Portrait-gallery</button>
+            </a>
+        </div>
+
+        <div id="right-half" class="half">
+            <h2>Videos</h2>
+            <hr>
+            <img src="portrait1.jpg" alt="Photo 1">
+            <hr>
+            <a href="http://127.0.0.1:5500/High%20Click/Video-gallery.html" target="_blank">
+                <button type="button">Video-gallery</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
